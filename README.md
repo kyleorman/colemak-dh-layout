@@ -1,0 +1,1 @@
+This project is my custom colemak-dh layout. It will host my moonlander configuration, qmk configurations, autohotkey, and custom software layouts. I am working on creating an optimized symbol layout for work writing SystemVerilog and other HDL.
