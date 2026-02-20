@@ -7,7 +7,7 @@ Repository guidance for AI coding agents working in this Colemak-DH keyboard lay
 - This repo hosts a custom Colemak-DH layout optimized for SystemVerilog/HDL work.
 - Primary hardware target: ZSA Moonlander keyboard.
 - Planned scope: Moonlander QMK firmware, AutoHotKey configs, and software-level key remapping.
-- The layout uses home-row mods (LSFT/LCTL/LALT/LGUI on ARST, mirrored on NEIO) and 8 layers.
+- The layout uses home-row mods (LSFT/LCTL/LALT/LGUI on ARST, mirrored on NEIO) and currently 8 layers.
 
 ## Repository Map
 
@@ -38,14 +38,14 @@ Repository guidance for AI coding agents working in this Colemak-DH keyboard lay
 
 Preferred flow for non-trivial work:
 
-1. `planner` → writes `.Claude/work/<slug>/plan.md`
-2. `plan-reviewer` → writes `.Claude/work/<slug>/plan_review.md`; resolve blockers before coding
-3. `build` (implementer) → executes plan and appends `.Claude/work/<slug>/implementation_log.md`
-4. `code-reviewer` → writes `.Claude/work/<slug>/code_review.md`
-5. `build` fix loop → addresses Blocker/Major findings and appends `.Claude/work/<slug>/fix_log.md`
-6. `code-reviewer` release gate → writes `.Claude/work/<slug>/release_check.md`; require PASS before commit/push
+1. `planner` → writes `.opencode/work/<slug>/plan.md`
+2. `plan-reviewer` → writes `.opencode/work/<slug>/plan_review.md`; resolve blockers before coding
+3. `build` (implementer) → executes plan and appends `.opencode/work/<slug>/implementation_log.md`
+4. `code-reviewer` → writes `.opencode/work/<slug>/code_review.md`
+5. `build` fix loop → addresses Blocker/Major findings and appends `.opencode/work/<slug>/fix_log.md`
+6. `code-reviewer` release gate → writes `.opencode/work/<slug>/release_check.md`; require PASS before commit/push
 
-Pipeline artifacts for each task live in `.Claude/work/<slug>/`:
+Pipeline artifacts for each task live in `.opencode/work/<slug>/`:
 
 - `plan.md`
 - `plan_review.md`
